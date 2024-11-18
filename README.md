@@ -15,3 +15,17 @@ Para compilar y ejecutar el codigo dp.cpp:
 
 - g++ -o dp dp.cpp -Wall
 - ./dp
+
+Si se quiere medir el uso de memoria con valgrind y la herramienta massif, se tiene que ejecutar el siguiente comando:
+
+- valgrind --tool=massif bf
+- valgrind --tool=massif dp
+
+Para los programas de fuerza bruta y programacion dinamica, respectivamente.
+
+Esta utilidad ejectutara los programas, por lo tanto tiene que tener todos los archivos necesarios mencionados anteriormente.
+
+Después de la ejecución se creara un archivo massif.out.\<pid>
+
+Para vizualizar este archivo, se tiene que ejecutar el siguiente comando:
+-  ms_print massif.out.\<pid>
