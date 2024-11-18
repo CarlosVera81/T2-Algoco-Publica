@@ -18,8 +18,8 @@ Para compilar y ejecutar el codigo dp.cpp:
 
 Si se quiere medir el uso de memoria con valgrind y la herramienta massif, se tiene que ejecutar el siguiente comando:
 
-- valgrind --tool=massif bf
-- valgrind --tool=massif dp
+- valgrind --tool=massif ./bf
+- valgrind --tool=massif ./dp
 
 Para los programas de fuerza bruta y programacion dinamica, respectivamente.
 
